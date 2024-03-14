@@ -20,4 +20,3 @@ def cachipun():
         return 'Perdiste'
     elif eleccion == 'papel' and b == 'piedra':
         return 'Ganaste'
-print(cachipun())
