@@ -1,11 +1,13 @@
 from random import *
 
-def cachipun(eleccion):
+def cachipun():
+    print('Elige piedra, papel o tijera')
+    eleccion = str(input())
     lista = ['piedra', 'papel', 'tijera']
     a = randint(0,2)
     b = lista[a]
     if eleccion == b:
-        return cachipun(eleccion)
+        return cachipun()
     elif eleccion == 'tijera' and b == 'piedra':
         return 'Perdiste'
     elif eleccion == 'tijera' and b == 'papel':
@@ -18,4 +20,4 @@ def cachipun(eleccion):
         return 'Perdiste'
     elif eleccion == 'papel' and b == 'piedra':
         return 'Ganaste'
-    
+print(cachipun())
